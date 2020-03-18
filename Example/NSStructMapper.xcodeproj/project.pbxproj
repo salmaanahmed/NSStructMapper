@@ -15,6 +15,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6C7F28FF2422643D004590F5 /* SimpleMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F28FE2422643D004590F5 /* SimpleMappable.swift */; };
+		6C7F29002422643D004590F5 /* SimpleMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F28FE2422643D004590F5 /* SimpleMappable.swift */; };
+		6C7F29022422652F004590F5 /* EnumMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F29012422652F004590F5 /* EnumMappable.swift */; };
+		6C7F29032422652F004590F5 /* EnumMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F29012422652F004590F5 /* EnumMappable.swift */; };
+		6C7F29052422657E004590F5 /* ComplexMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F29042422657E004590F5 /* ComplexMappable.swift */; };
+		6C7F29062422657E004590F5 /* ComplexMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F29042422657E004590F5 /* ComplexMappable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49D880D9EC3C84736008E042 /* NSStructMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NSStructMapper.podspec; path = ../NSStructMapper.podspec; sourceTree = "<group>"; };
-		4D9CA7BAC819F1C861DA8006 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		49D880D9EC3C84736008E042 /* NSStructMapper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSStructMapper.podspec; path = ../NSStructMapper.podspec; sourceTree = "<group>"; };
+		4D9CA7BAC819F1C861DA8006 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5D1F99C098EDE51F24CCA2FA /* Pods_NSStructMapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSStructMapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NSStructMapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSStructMapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +47,14 @@
 		607FACE51AFB9204008FA782 /* NSStructMapper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSStructMapper_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6C7F28FE2422643D004590F5 /* SimpleMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMappable.swift; sourceTree = "<group>"; };
+		6C7F29012422652F004590F5 /* EnumMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumMappable.swift; sourceTree = "<group>"; };
+		6C7F29042422657E004590F5 /* ComplexMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexMappable.swift; sourceTree = "<group>"; };
 		777656C84236BEBA772AA797 /* Pods-NSStructMapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSStructMapper_Example.release.xcconfig"; path = "Target Support Files/Pods-NSStructMapper_Example/Pods-NSStructMapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		843C2A72CBE58ED82EED293E /* Pods_NSStructMapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSStructMapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B537FA6F2CAB9CCE72256CDE /* Pods-NSStructMapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSStructMapper_Tests.release.xcconfig"; path = "Target Support Files/Pods-NSStructMapper_Tests/Pods-NSStructMapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E0E19145F278C923B4BA5F97 /* Pods-NSStructMapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSStructMapper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NSStructMapper_Tests/Pods-NSStructMapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EDE04B10866B281F51FDB01A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EDE04B10866B281F51FDB01A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FCA4FF6F86B3ABDF59371DB1 /* Pods-NSStructMapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSStructMapper_Example.debug.xcconfig"; path = "Target Support Files/Pods-NSStructMapper_Example/Pods-NSStructMapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +95,6 @@
 				E0E19145F278C923B4BA5F97 /* Pods-NSStructMapper_Tests.debug.xcconfig */,
 				B537FA6F2CAB9CCE72256CDE /* Pods-NSStructMapper_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +128,9 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				6C7F28FE2422643D004590F5 /* SimpleMappable.swift */,
+				6C7F29012422652F004590F5 /* EnumMappable.swift */,
+				6C7F29042422657E004590F5 /* ComplexMappable.swift */,
 			);
 			name = "Example for NSStructMapper";
 			path = NSStructMapper;
@@ -227,6 +238,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,11 +281,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NSStructMapper_Example/Pods-NSStructMapper_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CRuntime/CRuntime.framework",
 				"${BUILT_PRODUCTS_DIR}/NSStructMapper/NSStructMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Runtime/Runtime.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRuntime.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSStructMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Runtime.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,8 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7F29022422652F004590F5 /* EnumMappable.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				6C7F28FF2422643D004590F5 /* SimpleMappable.swift in Sources */,
+				6C7F29052422657E004590F5 /* ComplexMappable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7F29032422652F004590F5 /* EnumMappable.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				6C7F29062422657E004590F5 /* ComplexMappable.swift in Sources */,
+				6C7F29002422643D004590F5 /* SimpleMappable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

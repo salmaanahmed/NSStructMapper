@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NSStructMapper'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NSStructMapper.'
+  s.summary          = 'Library to Map NSObjects to SwiftObjects and Vice Versa'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  NSObject is the base class for most ObjC objects. What if you need to pass your Swift object into some ObjC method.
+  What if you are already using NSObjects and trying to migrate to swift, or want to use swif objects for CoreData.
+  It is a hassle to write equivelent classes with initializers instead use this library. It will convert your NSObject to SwiftObject and ViceVersa.
                        DESC
 
-  s.homepage         = 'https://github.com/salmaan.ahmed@hotmail.com/NSStructMapper'
+  s.homepage         = 'https://github.com/salmaanahmed/NSStructMapper'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'salmaan.ahmed@hotmail.com' => 'salmaan.ahmed@hotmail.com' }
-  s.source           = { :git => 'https://github.com/salmaan.ahmed@hotmail.com/NSStructMapper.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/salmaanahmed/NSStructMapper.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/salmaanahmed91'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'NSStructMapper/Classes/**/*'
   
@@ -38,5 +40,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Runtime', '~> 2.1.1'
+  s.swift_version = '5.0'
 end
