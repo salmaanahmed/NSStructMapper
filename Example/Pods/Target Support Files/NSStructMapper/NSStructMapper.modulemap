@@ -1,0 +1,6 @@
+framework module NSStructMapper {
+  umbrella header "NSStructMapper-umbrella.h"
+
+  export *
+  module * { export * }
+}
