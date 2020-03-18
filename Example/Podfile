@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NSStructMapper_Example' do
+  pod 'NSStructMapper', :path => '../'
+
+  target 'NSStructMapper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
